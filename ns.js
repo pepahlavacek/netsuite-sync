@@ -22,6 +22,7 @@ program
     .version(require('./package.json').version)
     .option('-u, --upload <file>', "Upload file to NetSuite file cabinet")
     .option('-d, --desc description', "Description for uploaded file")
+    .option('-cf, --configfile', "Config file")
     .option('-f, --folder [value]',
         "Overrides the internal ID of the target folder for the uploaded file")
     .option('-e, --encrypt-config', "encrypts the config file using the NSPW environment variable (must" +
